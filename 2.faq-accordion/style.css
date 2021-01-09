@@ -1,0 +1,185 @@
+body {
+  text-align: left;
+  height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+}
+.element {
+  margin: 250px auto;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  margin: 120px 20px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  padding-top: 150px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+hr {
+  width: 85%;
+  opacity: 0.4;
+}
+
+article {
+  margin-left: 35px;
+}
+
+/* Image start*/
+.container-top {
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.top-img-mobile {
+  position: absolute;
+  bottom: 5px;
+  right: 120px;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -10px;
+  right: 120px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Image end */
+/* collapsible start */
+
+.accordion {
+  font-size: 0.75rem;
+  background-color: white;
+  color: hsl(237, 12%, 33%);
+  cursor: pointer;
+  padding: 0px 32px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: block;
+  font-weight: 0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  font-size: 0.75rem;
+  padding: 0px 32px;
+  background-color: white;
+  color: hsl(240, 6%, 50%);
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: "\02C3";
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(14, 88%, 65%);
+  float: right;
+  margin-left: 5px;
+  -webkit-transform: rotate(90deg);
+}
+
+.active::after {
+  content: "\02C3";
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(14, 88%, 65%);
+  float: right;
+  margin-left: 5px;
+  -webkit-transform: rotate(270deg);
+}
+
+/* collapsible end */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .side-img-desktop {
+    display: none;
+  }
+  #box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-top {
+    display: none;
+  }
+
+  h1 {
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 33px;
+  }
+
+  .side-img-desktop {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    /* height: 50%; */
+  }
+
+  .right-text {
+    position: relative;
+    top: -1000px;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    padding-top: 10px;
+    /* padding: 50px 0px 50px 0px; */
+  }
+
+  .container {
+    margin: 50px 150px;
+    height: 50%;
+    overflow: hidden;
+    box-shadow: 0px 10px 50px grey;
+  }
+
+  #bg-pattern {
+    position: relative;
+    left: -560px;
+    top: -300px;
+  }
+
+  #woman {
+    position: relative;
+    right: 70px;
+    bottom: 900px;
+  }
+
+  #box {
+    position: absolute;
+    z-index: 1;
+    left: 65px;
+    bottom: 350px;
+  }
+}
