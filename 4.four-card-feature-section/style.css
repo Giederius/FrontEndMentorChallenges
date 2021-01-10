@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
 
 body {
+  max-width: 1200px;
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 0%, 98%);
+  margin: 0px auto;
 }
 /* Main text */
 h1 {
   font-size: 2rem;
   margin: 0px auto;
+  color: hsl(234, 12%, 34%);
+}
+h2 {
+  color: hsl(234, 12%, 34%);
 }
 
 #top-h1 {
@@ -21,7 +27,7 @@ h1 {
 }
 
 .main-text p {
-  margin: 10px auto 50px auto;
+  margin: 10px 20px 50px 20px;
   font-size: 1.4rem;
   font-weight: 400;
   color: hsl(229, 6%, 66%);
@@ -39,16 +45,45 @@ h1 {
   padding: 10px 20px;
   margin: 20px auto;
   border-radius: 10px;
-  height: 250px;
+  height: 200px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+#border-super {
+  border-top: 10px solid hsl(180, 62%, 55%);
+}
+
+#border-team {
+  border-top: 10px solid hsl(0, 78%, 62%);
+}
+
+#border-karma {
+  border-top: 10px solid hsl(34, 97%, 64%);
+}
+
+#border-calc {
+  border-top: 10px solid hsl(212, 86%, 64%);
+}
+
+.card-top-text {
+  margin-bottom: 5px;
 }
 .card p {
   margin-top: 5px;
   margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: hsl(229, 6%, 66%);
 }
 
 img {
-  position: absolute;
-  left: 360px;
+  margin-top: 20px;
+  float: right;
+}
+.img-up {
+  margin-top: 9px;
 }
 /* cards end */
 
@@ -58,4 +93,54 @@ img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 700px) {
+  .main-text {
+    background-color: hotpink\;;
+  }
+
+  .main-text p {
+    margin: 10px 30px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card {
+    height: 250px;
+    margin: 15px 10px;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+
+  .img-up {
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .main-text p {
+    margin: 0px auto;
+    width: 400px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #border-super {
+    transform: translateY(150px);
+  }
+
+  #border-calc {
+    transform: translateY(150px);
+  }
+
+  #border-karma {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
 }
