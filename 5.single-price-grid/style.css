@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* section */
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+}
+
+section {
+  display: grid;
+  margin: 80px 30px;
+}
+
+/* community section */
+
+.community {
+  padding: 20px 25px;
+  background-color: white;
+}
+
+.community h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.community h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.community p {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.1rem;
+  letter-spacing: 1.2;
+  line-height: 2;
+}
+
+/* monthly subs */
+
+.subscription {
+  padding: 20px 25px;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(179, 62%, 43%);
+}
+
+#price {
+  font-size: 2rem;
+}
+
+.subscription span {
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+
+/* why us */
+
+.why-us {
+  padding: 20px 25px;
+  background-color: rgb(108, 188, 188);
+}
+
+li {
+  list-style-type: none;
+}
+
+/*  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
