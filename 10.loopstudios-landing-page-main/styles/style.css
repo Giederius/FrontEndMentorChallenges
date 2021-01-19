@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Alata", sans-serif;
+}
+
+.hero {
+  height: 120vh;
+}
+
+.hero #hero-img {
+  z-index: 0;
+  width: 100%;
+}
+
+.hero nav {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero nav #burger {
+  padding-left: 200px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  visibility: visible;
+  top: 30vh;
+  left: 6vh;
+  width: 66%;
+  padding: 25px;
+  border: 3px solid white;
+}
+
+.hero .hidden-menu {
+  position: absolute;
+  top: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.hero .hidden-menu ul {
+  list-style-type: none;
+  font-size: 2rem;
+  padding-top: 60%;
+}
+
+.hero .hidden-menu ul li {
+  padding: 20px 0px;
+}
+
+.hero .active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hero .hidden {
+  visibility: hidden;
+}
+
+.leader {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.leader img {
+  width: 90%;
+}
+
+.leader h2 {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 2.2rem;
+  color: black;
+}
+
+.leader p {
+  color: #8c8c8c;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin: 20px 50px;
+}
+
+.creations {
+  text-align: center;
+}
+
+.creations h2 {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 2.2rem;
+  color: black;
+}
+
+.creations button {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  padding: 12px 25px 10px 25px;
+  background-color: transparent;
+  margin-top: 60px;
+  border: 1px solid black;
+}
+
+.creations button:hover {
+  background-color: black;
+  color: white;
+}
+
+.our-work {
+  margin-bottom: 20px;
+  position: relative;
+  height: 150px;
+  text-align: center;
+}
+
+.our-work img {
+  width: 80%;
+}
+
+.our-work h3 {
+  font-size: 1.6rem;
+  text-align: left;
+  position: relative;
+  color: white;
+  top: 120px;
+  left: 70px;
+}
+
+.our-work:hover {
+  opacity: 0.3;
+}
+
+.our-work:hover h3 {
+  color: dimgray;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 30px 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+footer img {
+  padding: 20px 0px;
+}
+
+footer ul {
+  padding: 0px;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 15px 0px;
+  font-size: 1.2rem;
+}
+
+footer .social img {
+  padding: 10px;
+}
+
+footer h4 {
+  color: #8c8c8c;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

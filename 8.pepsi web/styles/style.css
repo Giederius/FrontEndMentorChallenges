@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 30px;
+}
+
+nav #logo {
+  width: 50px;
+}
+
+nav button {
+  z-index: 2000;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav i {
+  cursor: pointer;
+  z-index: 2000;
+  color: white;
+  font-size: 3rem;
+}
+
+nav .i-active {
+  color: #0162bd;
+}
+
+nav .none {
+  color: yellow;
+}
+
+nav .my-links {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 200vh;
+  width: 50%;
+  z-index: 1000;
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+nav .my-links ul {
+  margin-top: 200px;
+  font-weight: 800;
+  list-style: none;
+  color: #0162bd;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+nav .my-links li {
+  padding: 30px 10px;
+}
+
+nav .my-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+body {
+  overflow-x: hidden;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #0162bd;
+}
+
+body section {
+  margin: 10px 30px;
+}
+
+body section h1 {
+  margin: 30px 0px;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+body section p {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+body section button {
+  margin: 20px 0px;
+  font-weight: 800;
+  background-color: white;
+  border-style: none;
+  border-radius: 60px;
+  padding: 8px 40px;
+}
+
+body #hero-can {
+  display: block;
+  margin: 50px auto;
+}
+
+.small-cans {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.small-cans img {
+  width: 15%;
+}
+
+.small-can {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.lift-up {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.social {
+  margin: 60px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.never-changing {
+  margin-left: -9px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.never-changing h1 {
+  margin: 0px;
+  color: #0162bd;
+}
+
+.never-changing h2 {
+  -webkit-transform: translateY(-25px) rotate(-20deg);
+          transform: translateY(-25px) rotate(-20deg);
+  margin: 0px;
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  color: #1e1e1e;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products img {
+  width: 30%;
+}
+/*# sourceMappingURL=style.css.map */
