@@ -38,6 +38,7 @@ p {
     z-index: 0;
     width: 100%;
   }
+
   nav {
     z-index: 2;
     position: absolute;
@@ -50,6 +51,12 @@ p {
       padding-left: 200px;
       height: 20px;
       cursor: pointer;
+    }
+    .close {
+      content: url("/10.loopstudios-landing-page-main/images/icon-close.svg");
+    }
+    .desktop-nav-menu {
+      visibility: hidden;
     }
   }
   h1 {
@@ -76,7 +83,9 @@ p {
       font-size: 2rem;
       padding-top: 60%;
       li {
-        padding: 20px 0px;
+        border: 1px solid transparent;
+        padding: 20px 0px 0px 0px;
+        text-transform: uppercase;
       }
     }
   }
@@ -118,11 +127,19 @@ p {
     background-color: transparent;
     margin-top: 60px;
     border: 1px solid black;
+    transition: 0.5s;
+  }
+  #desktop-btn {
+    display: none;
   }
   button:hover {
     background-color: black;
     color: white;
   }
+}
+
+.our-work-d {
+  display: none;
 }
 
 .our-work {
@@ -162,12 +179,14 @@ footer {
     padding: 0px;
     list-style: none;
     li {
-      padding: 15px 0px;
+      padding: 15px 0px 0px 0px;
       font-size: 1.2rem;
+      text-transform: uppercase;
     }
   }
   .social {
     img {
+      margin: 10px 0px;
       padding: 10px;
     }
   }
@@ -175,10 +194,15 @@ footer {
     color: $text-color;
   }
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 
-li:hover {
-  border: 1px solid white;
+a:hover {
+  width: 20%;
   border-style: hidden hidden solid hidden;
+  border-bottom-style: 1px solid white;
 }
 
 .attribution {
@@ -187,4 +211,140 @@ li:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 750px) {
+  nav {
+    margin: 0px 20px;
+    ul {
+      margin-right: 50px;
+    }
+  }
+  .hero {
+    height: 100%;
+    #hero-img {
+      content: url("/10.loopstudios-landing-page-main/images/desktop/image-hero.jpg");
+    }
+    h1 {
+      font-size: 3.5rem;
+      top: 13vh;
+      width: 50%;
+    }
+    nav {
+      width: 95%;
+      #burger {
+        visibility: hidden;
+      }
+      .desktop-nav-menu {
+        z-index: 3;
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        li {
+          padding: 0px 5px;
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .leader {
+    height: 500px;
+    text-align: left;
+    img {
+      margin-left: 80px;
+      width: 50%;
+    }
+
+    .leader-text {
+      background-color: white;
+      position: relative;
+      padding: 30px;
+      left: 350px;
+      text-align: center;
+      bottom: 200px;
+      height: 200px;
+      width: 400px;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .creations {
+    .creations-headline {
+      margin: 0px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+    h2 {
+      margin-top: 0px;
+    }
+    #desktop-btn {
+      display: inline;
+      margin-top: 0px;
+    }
+    #mobile-btn {
+      display: none;
+    }
+  }
+
+  .work-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 360px 360px;
+
+    .our-work-d {
+      display: inline;
+      width: 90%;
+      justify-self: center;
+      align-self: center;
+    }
+    h3 {
+      top: 300px;
+      left: 30px;
+    }
+    .our-work-m {
+      display: none;
+    }
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    justify-self: center;
+    #footer-logo {
+      padding-left: 10px;
+      text-align: left;
+      align-self: center;
+    }
+    .social {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: right;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      text-transform: none;
+
+      li {
+        grid-row: 1/2;
+        align-self: flex-start;
+        text-transform: none;
+        padding: 0px 10px;
+      }
+    }
+    h4 {
+      justify-self: right;
+      align-self: flex-start;
+    }
+  }
 }
