@@ -32,18 +32,16 @@
       font-openSans
       text-sm text-center
       tracking-wide
-      md:mx-auto
-      md:w-max
-      lg:w-2/3
-      lg:mx-auto
+      md:mx-10
+      lg:mx-32
     "
   >
     <nav class="flex justify-between items-center mb-5">
-      <img class="h-6" src="./images/logo.svg" alt="" />
+      <img class="h-6 md:h-12 lg:h-16" src="./images/logo.svg" alt="" />
       <ul class="inline-flex font-raleway">
-        <li class="px-3">Features</li>
-        <li class="px-3">Team</li>
-        <li class="px-3">Sign In</li>
+        <li class="px-3 w-20 hover:underline hover:font-bold">Features</li>
+        <li class="px-3 w-20 hover:underline hover:font-bold">Team</li>
+        <li class="px-3 w-20 hover:underline hover:font-bold">Sign In</li>
       </ul>
     </nav>
 
@@ -62,7 +60,16 @@
         co-workers.
       </p>
       <button
-        class="my-7 bg-gradient-to-r from-cyan to-blue py-4 px-24 rounded-full"
+        class="
+          my-7
+          bg-gradient-to-r
+          from-cyan
+          to-blue
+          py-4
+          px-24
+          rounded-full
+          hover:bg-cyan
+        "
       >
         Get Started
       </button>
@@ -78,7 +85,7 @@
         <h2 class="font-raleway text-lg font-semibold my-3">
           Access your files, anywhere
         </h2>
-        <p class="md:mx-5">
+        <p class="md:mx-5 lg:mx-22">
           The ability to use a smartphone, tablet, or computer to access your
           account means your files follow you everywhere.
         </p>
@@ -92,7 +99,7 @@
         <h2 class="text-lg font-semibold my-3 font-raleway">
           Security you can trust
         </h2>
-        <p>
+        <p class="md:mx-5 lg:mx-22">
           2-factor authentication and user-controlled encryption are just a
           couple of the security features we allow to help secure your files.
         </p>
@@ -106,7 +113,7 @@
         <h2 class="text-lg font-semibold my-3 font-raleway">
           Real-time collaboration
         </h2>
-        <p>
+        <p class="md:mx-5 lg:mx-22">
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
         </p>
@@ -120,7 +127,7 @@
         <h2 class="text-lg font-semibold my-3" font-raleway>
           Store any type of file
         </h2>
-        <p>
+        <p class="md:mx-5 lg:mx-22">
           Whether you're sharing holidays photos or work documents, Fylo has you
           covered allowing for all file types to be securely stored and shared.
         </p>
@@ -155,10 +162,26 @@
           for live collaboration. No email attachments required.
         </p>
         <div
-          class="flex text-left my-4 border-b py-1 w-max text-cyan border-cyan"
+          class="
+            flex
+            text-left
+            my-4
+            border-b
+            py-1
+            w-max
+            text-cyan
+            border-cyan
+            hover:border-white
+            hover:text-white
+            hover:fill-white
+          "
         >
           <p class="pr-2">See how Fylo works</p>
-          <img class="object-contain" src="/images/icon-arrow.svg" alt="" />
+          <img
+            class="object-contain icon"
+            src="/images/icon-arrow.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -234,17 +257,39 @@
         generous. If you have any questions, our support team would be happy to
         help you.
       </p>
-      <form action="">
-        <input
-          class="py-4 pl-4 rounded-full w-80 md:py-3"
-          type="email"
-          placeholder="email@example.com"
-        />
+      <form action="" class="md:flex md:flex-row">
+        <div class="mx-auto mb-3 md:mb-1">
+          <input
+            id="cta-input"
+            class="
+              py-4
+              pl-4
+              rounded-full
+              w-80
+              md:py-3
+              focus:outline-none
+              focus:ring-4
+              text-gray-900
+            "
+            type="email"
+            placeholder="email@example.com"
+          />
+          <div
+            id="errorMsg"
+            class="text-sm font-openSans text-errorColor hidden"
+          >
+            Please enter a valid email address
+          </div>
+        </div>
         <button
+          type="submit"
           class="
+            mygtukas
             w-80
-            my-6
-            md:ml-4
+            mt-3
+            md:mt-0
+            mb-6
+            md:mx-auto
             bg-gradient-to-r
             from-cyan
             to-blue
@@ -254,6 +299,7 @@
             md:py-3
             md:px-2
             md:w-40
+            focus:outline-none
           "
         >
           Get Started For Free
@@ -307,5 +353,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
