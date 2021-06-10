@@ -28,6 +28,7 @@
         mb-10
         justify-center
         items-center
+        leading-6
       "
     >
       <img class="h-24 object-contain my-16" src="./images/logo.svg" alt="" />
@@ -36,21 +37,31 @@
           A history of <br class="sm:block md:hidden" />
           everything you copy
         </h1>
-        <p class="leading-6 pb-8 text-bodyText">
+        <p class="pb-8 text-bodyText md:mx-28">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
       </div>
-      <button
-        class="bg-primaryBtn py-3 my-3 text-white w-80 rounded-full shadow-xl"
-      >
-        Download for iOS
-      </button>
-      <button
-        class="bg-secondaryBtn py-3 my-3 text-white w-80 rounded-full shadow-md"
-      >
-        Download for Mac
-      </button>
+      <div class="sm:flex sm:flex-col xl:flex-row">
+        <button
+          class="bg-primaryBtn py-3 my-3 text-white w-80 rounded-full shadow-xl"
+        >
+          Download for iOS
+        </button>
+        <button
+          class="
+            bg-secondaryBtn
+            py-3
+            my-3
+            text-white
+            w-80
+            rounded-full
+            shadow-md
+          "
+        >
+          Download for Mac
+        </button>
+      </div>
     </header>
 
     <div class="mt-24 px-10">
@@ -58,35 +69,35 @@
         Keep track of your <br class="sm:block md:hidden" />
         snippets
       </h2>
-      <p class="text-bodyText leading-6">
+      <p class="text-bodyText leading-6 md:px-28">
         Clipboard instantly stores any item you copy in the cloud, meaning you
         can access your snippets immediately on all your devices. Our Mac and
-        iOS apps will help you organize everything.
+        iOS apps will help you organiz e everything.
       </p>
     </div>
 
-    <div class="flex flex-col my-5 mx-10">
+    <div class="flex flex-col my-5 mx-10 md:flex-row">
       <img
-        class="object-contain h-72 mt-5"
+        class="object-contain sm:h-72 mt-5 md:h-2/5 md:-ml-72"
         src="./images/image-computer.png"
         alt=""
       />
-      <div class="my-5">
+      <div class="sm:my-5 md:text-left md:my-16 md:px-10">
         <div class="my-5">
-          <h2 class="my-2 text-lg font-bold text-headerText">Quick Search</h2>
+          <h2 class="my-2 text-xl font-bold text-headerText">Quick Search</h2>
           <p class="text-bodyText">
             Easily search your snippets by content, category, web address,
             application, and more.
           </p>
         </div>
         <div class="my-5">
-          <h2 class="my-4 text-lg font-bold text-headerText">iCloud Sync</h2>
+          <h2 class="my-4 text-xl font-bold text-headerText">iCloud Sync</h2>
           <p class="text-bodyText">
             Instantly saves and syncs snippets across all your devices.
           </p>
         </div>
         <div class="my-5">
-          <h2 class="my-4 text-lg font-bold text-headerText">
+          <h2 class="my-4 text-xl font-bold text-headerText">
             Complete History
           </h2>
           <p class="text-bodyText">
@@ -97,64 +108,103 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="features-2">
-        <h2>Access Clipboard anywhere</h2>
-        <p>
+    <div class="mt-16 mx-10">
+      <div class="">
+        <h2 class="text-2xl my-2 font-bold text-headerText">
+          Access Clipboard Anywhere
+        </h2>
+        <p class="text-bodyText my-2 mb-10 md:mx-28">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
       </div>
-      <img src="" alt="" />
-      <div class="features-2"></div>
-      <h2>Supercharge your workflow</h2>
-      <p>We’ve got the tools to boost your productivity.</p>
-      <div class="features-2">
-        <img src="" alt="" />
-        <h2>Create blacklists</h2>
-        <p>
-          Ensure sensitive information never makes its way to your clipboard by
-          excluding certain sources.
+      <img
+        class="mx-auto sm:h-1/4 md:h-2/6 object-contain"
+        src="./images/image-devices.png"
+        alt=""
+      />
+      <div class="my-5 mt-16 md:my-2">
+        <h2 class="text-xl my-2 font-bold text-headerText">
+          Supercharge your workflow
+        </h2>
+        <p class="text-bodyText">
+          We’ve got the tools to boost your productivity.
         </p>
       </div>
-      <div class="features-2">
-        <img src="" alt="" />
-        <h2>Plain text snippets</h2>
-        <p>
-          Remove unwanted formatting from copied text for a consistent look.
-        </p>
-      </div>
-      <div class="features-2">
-        <img src="" alt="" />
-        <h2>Sneak preview</h2>
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      <div class="sm:flex sm:flex-col md:flex-row">
+        <div class="sm:my-16 md:my-0">
+          <img
+            class="mx-auto my-10 h-8"
+            src="./images/icon-blacklist.svg"
+            alt=""
+          />
+          <h2 class="text-xl my-2 font-bold text-headerText">
+            Create blacklists
+          </h2>
+          <p class="text-bodyText px-4">
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div class="features-2">
+          <img class="mx-auto my-10" src="./images/icon-text.svg" alt="" />
+          <h2 class="text-xl my-2 font-bold text-headerText">
+            Plain text snippets
+          </h2>
+          <p class="text-bodyText px-4">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+        <div class="features-2">
+          <img class="mx-auto my-10" src="./images/icon-preview.svg" alt="" />
+          <h2 class="text-xl my-2 font-bold text-headerText">Sneak preview</h2>
+          <p class="text-bodyText px-4">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
       </div>
     </div>
     <div class="logo-container">
-      <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
-        src=""
+      <img class="mx-auto my-16" src="./images/logo-google.png" alt="" /><img
+        class="mx-auto my-16"
+        src="./images/logo-ibm.png"
         alt=""
-      /><img src="" alt="" />
+      /><img
+        class="mx-auto my-16"
+        src="./images/logo-microsoft.png"
+        alt=""
+      /><img class="mx-auto my-16" src="./images/logo-hp.png" alt="" />
     </div>
-    <div class="cta">
-      <h2>Clipboard for iOS and Mac OS</h2>
-      <p>
+    <div class="mb-28">
+      <h2 class="mx-16 text-3xl my-4 font-bold text-headerText">
+        Clipboard for iOS and Mac OS
+      </h2>
+      <p class="mx-14 text-bodyText mb-10">
         Available for free on the App Store. Download for Mac or iOS, sync with
         iCloud and you’re ready to start adding to your clipboard.
       </p>
-      <button>Download for iOS</button><button>Download for Mac</button>
+      <button
+        class="bg-primaryBtn py-3 my-3 text-white w-80 rounded-full shadow-xl"
+      >
+        Download for iOS
+      </button>
+      <button
+        class="bg-secondaryBtn py-3 my-3 text-white w-80 rounded-full shadow-md"
+      >
+        Download for Mac
+      </button>
     </div>
-    <footer>
-      <img src="" alt="" />
+    <footer class="mt-12 bg-footerColor py-20">
+      <img class="h-14 mx-auto" src="./images/logo.svg" alt="" />
       <div>
-        <ul>
-          <li>FAQs</li>
-          <li>Contact Us</li>
-          <li>Privacy Policy</li>
-          <li>Press Kit</li>
-          <li>Install Guide</li>
+        <ul class="py-8">
+          <li class="text-lg text-headerText py-3">FAQs</li>
+          <li class="text-lg text-headerText py-3">Contact Us</li>
+          <li class="text-lg text-headerText py-3">Privacy Policy</li>
+          <li class="text-lg text-headerText py-3">Press Kit</li>
+          <li class="text-lg text-headerText py-3">Install Guide</li>
         </ul>
-        <div class="socials">
+        <div class="flex justify-evenly items-start mx-24 py-2">
           <img src="./images/icon-facebook.svg" alt="" />
           <img src="./images/icon-twitter.svg" alt="" />
           <img src="./images/icon-instagram.svg" alt="" />
