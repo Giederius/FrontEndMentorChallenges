@@ -164,51 +164,112 @@
         </div>
       </div>
     </div>
-    <div class="logo-container">
-      <img class="mx-auto my-16" src="./images/logo-google.png" alt="" /><img
-        class="mx-auto my-16"
+    <div class="flex flex-col md:flex-row my-10 md:justify-center">
+      <img
+        class="sm:mx-auto sm:my-16 object-contain h-12 my-6 md:h-10 md:mx-5"
+        src="./images/logo-google.png"
+        alt=""
+      />
+      <img
+        class="sm:mx-auto sm:my-16 object-contain h-12 my-6 md:h-10 md:mx-5"
         src="./images/logo-ibm.png"
         alt=""
-      /><img
-        class="mx-auto my-16"
+      />
+      <img
+        class="sm:mx-auto sm:my-16 object-contain h-12 my-6 md:h-10 md:mx-5"
         src="./images/logo-microsoft.png"
+      />
+      <img
+        class="sm:mx-auto sm:my-16 object-contain h-12 my-6 md:h-10 md:mx-5"
+        src="./images/logo-hp.png"
         alt=""
-      /><img class="mx-auto my-16" src="./images/logo-hp.png" alt="" />
+      />
+      <img
+        class="sm:mx-auto sm:my-16 object-contain h-12 my-6 md:h-10 md:mx-5"
+        src="./images/logo-vector-graphics.png"
+      />
     </div>
     <div class="mb-28">
       <h2 class="mx-16 text-3xl my-4 font-bold text-headerText">
         Clipboard for iOS and Mac OS
       </h2>
-      <p class="mx-14 text-bodyText mb-10">
+      <p class="mx-14 text-bodyText mb-10 md:mx-44">
         Available for free on the App Store. Download for Mac or iOS, sync with
         iCloud and you’re ready to start adding to your clipboard.
       </p>
       <button
-        class="bg-primaryBtn py-3 my-3 text-white w-80 rounded-full shadow-xl"
+        class="
+          bg-primaryBtn
+          py-3
+          md:mx-5
+          my-3
+          text-white
+          w-80
+          rounded-full
+          shadow-xl
+        "
       >
         Download for iOS
       </button>
       <button
-        class="bg-secondaryBtn py-3 my-3 text-white w-80 rounded-full shadow-md"
+        class="
+          bg-secondaryBtn
+          py-3
+          my-3
+          md:mx-5
+          text-white
+          w-80
+          rounded-full
+          shadow-md
+        "
       >
         Download for Mac
       </button>
     </div>
-    <footer class="mt-12 bg-footerColor py-20">
-      <img class="h-14 mx-auto" src="./images/logo.svg" alt="" />
-      <div>
-        <ul class="py-8">
-          <li class="text-lg text-headerText py-3">FAQs</li>
-          <li class="text-lg text-headerText py-3">Contact Us</li>
-          <li class="text-lg text-headerText py-3">Privacy Policy</li>
-          <li class="text-lg text-headerText py-3">Press Kit</li>
-          <li class="text-lg text-headerText py-3">Install Guide</li>
+    <footer
+      class="
+        mt-12
+        md:mt-5
+        bg-footerColor
+        py-20
+        md:py-4
+        md:grid md:grid-rows-1 md:grid-cols-3
+        items-start
+        justify-start
+      "
+    >
+      <img class="h-14 mx-auto md:my-auto" src="./images/logo.svg" alt="" />
+      <div class="">
+        <ul
+          class="
+            py-8
+            md:py-0
+            md:-mx-7
+            md:grid md:grid-cols-3 md:grid-rows-2
+            md:text-left
+          "
+        >
+          <li class="text-lg text-bodyText py-3 md:py-4">FAQs</li>
+          <li class="text-lg text-bodyText py-3 md:py-4">Contact Us</li>
+          <li class="text-lg text-bodyText py-3 md:py-4">Privacy Policy</li>
+          <li class="text-lg text-bodyText py-3 md:py-4">Press Kit</li>
+          <li class="text-lg text-bodyText py-3 md:py-4">Install Guide</li>
         </ul>
-        <div class="flex justify-evenly items-start mx-24 py-2">
-          <img src="./images/icon-facebook.svg" alt="" />
-          <img src="./images/icon-twitter.svg" alt="" />
-          <img src="./images/icon-instagram.svg" alt="" />
-        </div>
+      </div>
+      <div
+        class="
+          flex
+          justify-evenly
+          items-start
+          md:items-center
+          mx-24
+          py-2
+          md:my-auto
+        "
+      >
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
       </div>
     </footer>
   </body>
